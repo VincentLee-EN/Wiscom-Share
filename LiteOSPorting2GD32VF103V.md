@@ -56,9 +56,11 @@
 
 ### 4. 验证
 1. 开发板四盏灯亮
+
 ![avator](https://github.com/VincentLee-EN/img/blob/master/light_on.jpg)
 
 2. 串口输出信息如下
+
 ![avator](https://github.com/VincentLee-EN/img/blob/master/output_1.png)
 
 读者可以试试触屏点灭LCD屏上的灯，串口正常情况下会输出对应信息。
