@@ -64,4 +64,4 @@
 读者可以试试触屏点灭LCD屏上的灯，串口正常情况下会输出对应信息。
 
 # 三、结束
-If you followed the tutorial to this step，Congratulations! Nice work!
+If you follow the tutorial to this step，congratulations! Nice work!
