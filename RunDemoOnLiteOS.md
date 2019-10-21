@@ -4,18 +4,23 @@
 ## 一、运行裸机工程自带demo
 LiteOS启动时默认运行裸机工程下的oc_oceanlink_demo，该例程会去连接云端，但是由于"GD32VF103V_EVAL"开发板无通讯组件（初步怀疑），所以调试串口会输出"config err"（参见[LiteOS移植教程](https://github.com/VincentLee-EN/Wisinfo-Share/blob/master/LiteOSPorting2GD32VF103V.md)的最后一张[图](https://github.com/VincentLee-EN/img/blob/master/output_1.png)）。
 
-![avator](https://github.com/VincentLee-EN/img/blob/master/10_21/default_demo.png)
+![avator](https://github.com/VincentLee-EN/img/blob/master/10_21/default_demo.png) 
 
 读者可能会想，既然这样，那禁用oc_oceanlink_demo，换个不连云的demo跑是不是就不报错了呢？别急，让我们一起动手看看。
 官方一共提供了3个demo，下面我以hello_world_demo为例介绍如何更换demo并在LiteOS上运行。
 
 1. 进入config.mk，修改LiteOS启动时默认运行的demo的名称
+
     ![avator](https://github.com/VincentLee-EN/img/blob/master/10_21/config_mk.png)
+    
     ![avator](https://github.com/VincentLee-EN/img/blob/master/10_21/change_default_demo.png)
 
 2. 进入main.c中添加头文件
+
     ![avator](https://github.com/VincentLee-EN/img/blob/master/10_21/main_c.png)
+
     ![avator](https://github.com/VincentLee-EN/img/blob/master/10_21/headfile.png)
+
     重新编译（make GD）工程，正常情况下会报一个错，我忘了在哪个文件下第几行报的错了，错误在于该报错文件没有#define hello_world_demo，模仿oc_oceanlink_demo的代码添加以下就好了（两行代码还是三行代码来着？？）。请读者根据报错信息自行修复错误~~
 
 3. 重新编译并把生成的elf文件下载到开发板上，会发现原先的config err不见了！
