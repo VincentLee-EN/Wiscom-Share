@@ -47,6 +47,11 @@ LiteOS启动时默认运行裸机工程下的oc_oceanlink_demo，该例程会去
 
       ![avator](https://github.com/VincentLee-EN/img/blob/master/10_21/kernel_demo_mk.png)
 
+  4. 更新project.mk
+      将kernel_demo.mk包含到project_mk中\
+      
+      ![avator](https://github.com/VincentLee-EN/img/blob/master/10_21/project_mk.png)
+
   3. 在main.c中包含kernel_demo->include下相应的头文件，读者便可以参见[LiteOS开发指南](https://github.com/LiteOS/LiteOS/blob/master/doc/Huawei_LiteOS_Developer_Guide_zh.md)中给的编程示例进行学习。
 
 ## 三、结束语
