@@ -34,7 +34,7 @@ LiteOS启动时默认运行裸机工程下的oc_oceanlink_demo，该例程会去
       > 链接：https://pan.baidu.com/s/1hAQXOp2abFMYdB_1-tQ6kg&shfl=sharepset \
       > 提取码：6v15 
   2. 修改kernel_demo.mk
-      添加如下代码到文件中保存关闭：
+      添加如下代码到文件中保存关闭\
       代码：
       ```C
         kernel_demo_src = ${wildcard $(TOP_DIR)/targets/GD32VF103V_EVAL/Demos/kernel_demo/api/*.c}
