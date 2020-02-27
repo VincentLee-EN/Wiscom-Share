@@ -9,9 +9,12 @@
 ## 2.1 系统时钟频率
   GD32VF103V默认使用8M的外部时钟频率，晟东评估板的外部时钟频率设计为25M.
 
-### 2.1.1 配置预处理器
+### 1) 配置预处理器
 右键项目 -> Properties -> C/C++ Build -> Settings -> GNU RISC-V Cross C Compiler，在Preprocessor中添加两项
 - USE_STDPERIPH_DRIVER
 - GD32VF103V_EVAL
 
-   ![avator](https://github.com/VincentLee-EN/img/blob/master/RunDemoOnEval_v1.0/prepeocessor.png)
+![avator](https://github.com/VincentLee-EN/img/blob/master/RunDemoOnEval_v1.0/prepeocessor.png)
+
+### 2) 修改外部时钟频率参数值
+在项目Peripherals中的gd32vf103.h文件中修改HXTAL_VALUE为25M

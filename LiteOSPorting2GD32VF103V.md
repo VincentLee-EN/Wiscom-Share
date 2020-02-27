@@ -18,12 +18,13 @@
 
 - RISCV-GCC工具链
 
-  下载安装教程：
+  ~~下载安装教程：~~（第二.2节有更简单的方法）
   > https://blog.csdn.net/qq_35553265/article/details/91324754
+
 
 - windows10配置make命令
 
-  教程
+  ~~教程~~（第二.2节有更简单的方法）
   > https://blog.csdn.net/weixin_39506322/article/details/91978490
 
   注：安装MinGW的时候选择Basic setup下选择mingw32-base包就可以了。
@@ -47,6 +48,14 @@
 ### 2. 准备并验证移植环境
 
 按照[Nuclei Studio IDE快速上手手册](https://riscv-mcu.github.io/Webpages/IDE_QuickStart/#8b-3)完成1-7步。
+
+配置RISCV-GCC和make
+1. 将NucleiStudio_IDE_201909\NucleiStudio\toolchain\RISC-V Embedded GCC\bin添加到环境变量用户变量的PATH变量中
+
+![avator](https://github.com/VincentLee-EN/img/blob/master/run_config.png)
+
+2. 将NucleiStudio_IDE_201909NucleiStudio\toolchain\Build Tools\bin添加到环境变量用户变量的PATH变量中
+![avator](https://github.com/VincentLee-EN/img/blob/master/make_include.png)
 
 ### 3. 将编译文件下载到裸机工程中
 1. 右键上一步创建的Running_LED->Run as->Run Configurations
