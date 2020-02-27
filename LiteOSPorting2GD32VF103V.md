@@ -52,7 +52,7 @@
 配置RISCV-GCC和make
 1. 将NucleiStudio_IDE_201909\NucleiStudio\toolchain\RISC-V Embedded GCC\bin添加到环境变量用户变量的PATH变量中
 
-![avator](https://github.com/VincentLee-EN/img/blob/master/run_config.png)
+![avator](https://github.com/VincentLee-EN/img/blob/master/riscv_gcc_include.png)
 
 2. 将NucleiStudio_IDE_201909NucleiStudio\toolchain\Build Tools\bin添加到环境变量用户变量的PATH变量中
 ![avator](https://github.com/VincentLee-EN/img/blob/master/make_include.png)
